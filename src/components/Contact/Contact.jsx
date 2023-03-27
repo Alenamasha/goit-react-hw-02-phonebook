@@ -25,8 +25,9 @@ export function Contact({ name, number, onDeleteContact, contactID }) {
   );
 }
 
-Contact.prototype = {
+Contact.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
   onDeleteContact: PropTypes.func.isRequired,
+  contactID: PropTypes.string.isRequired,
 };
